@@ -22,11 +22,11 @@ function create_item() {
   item.setAttribute("draggable", "true");
 
   item.addEventListener("dragstart", (e) => {
-    e.datatransfer.setData("text", e.target.id);
+    e.dataTransfer.setData("text", e.target.id);
   });
 
   item.addEventListener("dragend", (e) => {
-    e.datatransfer.clearData();
+    e.dataTransfer.clearData();
   });
 
   const input = document.createElement("input");
@@ -50,7 +50,7 @@ function create_item() {
 document.querySelectorAll(".drop").forEach((element) => {
   element.addEventListener("drop", (e) => {
     e.preventDefault();
-    const id = e.Datatransfer.getData("text");
+    const id = e.dataTransfer.getData("text");
     e.target.appendChild(document.getElementById(id));
   });
 
