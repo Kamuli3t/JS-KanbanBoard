@@ -22,11 +22,11 @@ function create_item() {
   item.setAttribute("draggable", "true");
 
   item.addEventListener("dragstart", (e) => {
-    e.Datatransfer.setData("text", `${e.target.id}`);
+    e.datatransfer.setData("text", e.target.id);
   });
 
   item.addEventListener("dragend", (e) => {
-    e.Datatransfer.clearData();
+    e.datatransfer.clearData();
   });
 
   const input = document.createElement("input");
