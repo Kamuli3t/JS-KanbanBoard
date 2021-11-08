@@ -40,7 +40,7 @@ function create_item() {
       order += 1;
       item.innerHTML = input.value;
       adding = false;
-    } else error = message;
+    } else error.innerHTML = message;
   });
   item.appendChild(save_btn);
 
