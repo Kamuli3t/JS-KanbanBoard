@@ -19,7 +19,7 @@ function create_item() {
   const item = document.createElement("div");
   item.classList.add("item");
   item.id = 'item - '+ order;
-  item.setAttribute("draggable", "true");
+  item.draggable = true;
 
   item.addEventListener("dragstart", (e) => {
     e.dataTransfer.setData("text", e.target.id);
