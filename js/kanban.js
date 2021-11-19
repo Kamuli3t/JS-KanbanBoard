@@ -18,7 +18,7 @@ add_btn.addEventListener("click", () => {
 function create_item() {
   const item = document.createElement("div");
   item.classList.add("item");
-  item.id = 'item - '+ order;
+  item.id = 'item- '+ order;
   item.draggable = true;
 
   item.addEventListener("dragstart", (e) => {
