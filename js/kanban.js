@@ -1,4 +1,4 @@
-let order = 1;
+let order ;
 let adding = false;
 
 const error = document.querySelector(".error");
